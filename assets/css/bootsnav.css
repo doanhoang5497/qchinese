@@ -686,11 +686,6 @@ li.close-full-menu {
     margin-left: 10px;
 }
 
-nav.navbar.bootsnav.sticked .attr-nav ul li {
-    padding: 27px 0 !important;
-}
-
-
 nav.navbar.navbar-fixed.navbar-transparent.white .attr-nav li:last-child a {
     background: #4ac4f3 none repeat scroll 0 0;
 }
