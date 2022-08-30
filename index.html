@@ -657,17 +657,17 @@
 
     <!-- Start Pricing Area
     ============================================= -->
-    <div id="pricing" class="pricing-area default-padding bg-gray bottom-less">
+    <div id="pricing" class="pricing-area default-padding bottom-less">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
+        <div class="row flex-nowrap pricing-gap">
+          <div class="col-lg-8 pricing-wrap">
             <span class="title"> Đăng ký học cùng Qchinese </span>
             <div class="content d-flex justify-content-between">
-              <div class="content-left">
+              <div class="content-left col-md-6">
                 <span class="content-left-title">Thông tin đăng kí</span>
                 <div class="content-left-input">
                   <label for="basic-url">Họ và Tên</label>
-                  <div class="input-group mb-3">
+                  <div class="input-group">
                     <input
                       type="text"
                       class="form-control"
@@ -675,8 +675,8 @@
                       aria-describedby="basic-addon3"
                     />
                   </div>
-                  <label for="basic-url">Họ và Tên</label>
-                  <div class="input-group mb-3">
+                  <label for="basic-url">Số điện thoại liên hệ</label>
+                  <div class="input-group">
                     <input
                       type="text"
                       class="form-control"
@@ -684,8 +684,8 @@
                       aria-describedby="basic-addon3"
                     />
                   </div>
-                  <label for="basic-url">Họ và Tên</label>
-                  <div class="input-group mb-3">
+                  <label for="basic-url">Email liên hệ</label>
+                  <div class="input-group">
                     <input
                       type="text"
                       class="form-control"
@@ -693,7 +693,7 @@
                       aria-describedby="basic-addon3"
                     />
                   </div>
-                  <span class="title"> Chọn gói học</span>
+                  <span class="content-left-title"> Chọn gói học</span>
                   <div
                     class="form-check d-flex align-items-center justify-content-between"
                   >
@@ -705,12 +705,14 @@
                       <span>1,499,000 vnd</span>
                     </label>
                     <div class="d-flex align-items-center">
-                      <div class="price d-flex flex-column align-items-end">
-                        1,199,000 vnd
-                        <span>Gói tiết kiệm nhất</span>
+                      <div
+                        class="price-select d-flex flex-column align-items-end"
+                      >
+                        <span class="price">1,199,000 vnd</span>
+                        <span class="des des-sug">Gói tiết kiệm nhất</span>
                       </div>
                       <input
-                        class="form-check-input content-left-input"
+                        class="form-check-input content-left-input-item"
                         type="radio"
                         name="exampleRadios"
                         id="exampleRadios1"
@@ -730,12 +732,14 @@
                       <span>899,000 vnd</span>
                     </label>
                     <div class="d-flex align-items-center">
-                      <div class="price d-flex flex-column align-items-end">
-                        749,000 vnd
-                        <span>Gói phổ thông</span>
+                      <div
+                        class="price-select d-flex flex-column align-items-end"
+                      >
+                        <span class="price">749,000 vnd</span>
+                        <span class="des">Gói phổ thông</span>
                       </div>
                       <input
-                        class="form-check-input content-left-input"
+                        class="form-check-input content-left-input-item"
                         type="radio"
                         name="exampleRadios"
                         id="exampleRadios2"
@@ -754,12 +758,14 @@
                       <span>349,000 vnd</span>
                     </label>
                     <div class="d-flex align-items-center">
-                      <div class="price d-flex flex-column align-items-end">
-                        299,000 vnd
-                        <span>Gói trải nghiệm</span>
+                      <div
+                        class="price-select d-flex flex-column align-items-end"
+                      >
+                        <span class="price">299,000 vnd</span>
+                        <span class="des">Gói trải nghiệm</span>
                       </div>
                       <input
-                        class="form-check-input content-left-input"
+                        class="form-check-input content-left-input-item"
                         type="radio"
                         name="exampleRadios"
                         id="exampleRadios3"
@@ -770,7 +776,7 @@
                 </div>
                 <button>Miễn phí đăng ký tài khoản</button>
               </div>
-              <div class="content-right">
+              <div class="content-right col-md-6">
                 <span
                   >Lợi ích mà bạn có được khi sở hữu tài khoản Qchinese</span
                 >
@@ -796,7 +802,92 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4"></div>
+          <div class="col-lg-4 pay-wrap d-flex flex-column">
+            <span class="title">Thông tin thanh toán khoá học</span>
+            <label for="basic-url">Ngân Hàng</label>
+            <div class="input-group align-items-center">
+              <input
+                type="text"
+                class="form-control"
+                id="basic-url"
+                aria-describedby="basic-addon3"
+                placeholder="Techcombank"
+              />
+              <img src="./assets/img/tcb-bank.png" alt="tcb" />
+            </div>
+            <label for="basic-url">Chủ tài khoản</label>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                id="basic-url"
+                aria-describedby="basic-addon3"
+                placeholder="Lâm Quốc Cường"
+              />
+            </div>
+            <label for="basic-url">Số tài khoản</label>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                id="basic-url"
+                aria-describedby="basic-addon3"
+                placeholder="19035945961014"
+              />
+            </div>
+            <label for="basic-url"
+              >Số điện thoại liên hệ giải quyết thắc mắc</label
+            >
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                id="basic-url"
+                aria-describedby="basic-addon3"
+                placeholder="+84 1111 1111"
+              />
+            </div>
+            <label for="basic-url">Email liên hệ giải quyết thắc mắc</label>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                id="basic-url"
+                aria-describedby="basic-addon3"
+                placeholder="Lamquoccuong@gmail.com"
+              />
+            </div>
+            <div class="title-note">
+              Những điều cần lưu ý khi thanh toán khoá học
+            </div>
+            <ul>
+              <li>
+                Lưu hóa đơn chuyển khoản để tránh sai sót trong quá trình Nâng
+                Cấp.
+              </li>
+              <li>
+                Thời gian tài khoản được nâng cấp có thể mất tới 1-2h. Xin vui
+                lòng đăng nhập tài khoản lại (trên App) sau 1-2h.
+              </li>
+              <li>
+                Ghi đúng nội dung chuyển khoản như bên trên (có thể dùng nút
+                COPY bên phải): QChinese[dấu cách][số điện thoại][dấu cách][số
+                tháng].
+              </li>
+              <li>
+                Trường hợp nạp tiền sai cú pháp, lỗi chưa vào web vui lòng gửi
+                "Bill Chuyển Khoản + Số Điện Thoại" vào Zalo Admin: 0774 358 388
+                để được hỗ trợ.
+              </li>
+              <li>
+                Không hoàn lại số tiền nạp vào hệ thống với bất kì lý do nào!
+              </li>
+            </ul>
+            <p>
+              For international users, please contact through email:
+              qchinese2020@gmail.com
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -804,102 +895,66 @@
 
     <!-- Start Team  
     ============================================= -->
-    <div id="team" class="team-area default-padding bottom-less">
-      <div class="container">
+    <div id="team" class="team-area">
+      <div class="">
         <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="site-heading text-center">
-              <h2>Innovative Team</h2>
-              <p>
-                Learning day desirous informed expenses material returned six
-                the. She enabled invited exposed him another. Reasonably
-                conviction solicitude me mr at discretion reasonable. Age out
-                full gate bed day lose.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="team-items">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="item">
-                <div class="thumb">
-                  <img src="./assets/img/800x800.png" alt="Thumb" />
-                  <div class="social">
-                    <ul>
-                      <li class="facebook">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      </li>
-                      <li class="twitter">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                      </li>
-                      <li class="pinterest">
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                      </li>
-                      <li class="instagram">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                      </li>
-                    </ul>
+          <div class="col-12 text-center team-content">
+            <div class="team-title">Đánh giá từ học viên</div>
+            <div class="team-slide">
+              <div class="swiper teamSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-item">
+                      <img
+                        src="./assets/img/team-slide.png"
+                        width="100%"
+                        height="100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-item">
+                      <img
+                        src="./assets/img/team-slide.png"
+                        width="100%"
+                        height="100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-item">
+                      <img
+                        src="./assets/img/team-slide.png"
+                        width="100%"
+                        height="100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-item">
+                      <img
+                        src="./assets/img/team-slide.png"
+                        width="100%"
+                        height="100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-item">
+                      <img
+                        src="./assets/img/team-slide.png"
+                        width="100%"
+                        height="100%"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-item">
+                      <img
+                        src="./assets/img/team-slide.png"
+                        width="100%"
+                        height="100%"
+                      />
+                    </a>
                   </div>
                 </div>
-                <div class="info">
-                  <h4>Ahmed Kamal</h4>
-                  <span>Developer of Softing</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="item">
-                <div class="thumb">
-                  <img src="./assets/img/800x800.png" alt="Thumb" />
-                  <div class="social">
-                    <ul>
-                      <li class="facebook">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      </li>
-                      <li class="twitter">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                      </li>
-                      <li class="pinterest">
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                      </li>
-                      <li class="instagram">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="info">
-                  <h4>Drunal Park</h4>
-                  <span>Manager of Softing</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="item">
-                <div class="thumb">
-                  <img src="./assets/img/800x800.png" alt="Thumb" />
-                  <div class="social">
-                    <ul>
-                      <li class="facebook">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                      </li>
-                      <li class="twitter">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                      </li>
-                      <li class="pinterest">
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                      </li>
-                      <li class="instagram">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="info">
-                  <h4>Munia Ankor</h4>
-                  <span>Founder of Softing</span>
-                </div>
+                <!-- <div
+                class="swiper-pagination slide-team-pagination d-flex align-items-center justify-content-center"
+              ></div> -->
               </div>
             </div>
           </div>
@@ -908,698 +963,42 @@
     </div>
     <!-- End Team -->
 
-    <!-- Start Blog  
-    ============================================= -->
-    <div id="blog" class="blog-area bg-gray default-padding bottom-less">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="site-heading text-center">
-              <h2>Latest News</h2>
-              <p>
-                Learning day desirous informed expenses material returned six
-                the. She enabled invited exposed him another. Reasonably
-                conviction solicitude me mr at discretion reasonable. Age out
-                full gate bed day lose.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="blog-items">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="item">
-                <div class="thumb">
-                  <a href="single.html">
-                    <img src="./assets/img/800x600.png" alt="Thumb" />
-                    <div class="post-type">
-                      <i class="fas fa-image"></i>
-                    </div>
-                  </a>
-                </div>
-                <div class="info">
-                  <h4>
-                    <a href="single.html"
-                      >Believe has request not how comfort</a
-                    >
-                  </h4>
-                  <div class="meta">
-                    <ul>
-                      <li>
-                        <a href="#"
-                          ><i class="fas fa-calendar-alt"></i> 12 Nov, 2018</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"><i class="fas fa-user"></i> User</a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fas fa-comments"></i> 23</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <p>
-                    Always polite moment on is warmth spirit it to hearts. Downs
-                    those still witty an balls so chief so. Moment an little
-                    remain
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="item">
-                <div class="thumb">
-                  <a href="single.html">
-                    <img src="./assets/img/800x600.png" alt="Thumb" />
-                    <div class="post-type">
-                      <i class="fas fa-video"></i>
-                    </div>
-                  </a>
-                </div>
-                <div class="info">
-                  <h4>
-                    <a href="single.html"
-                      >Speaking replying mistress him numerous</a
-                    >
-                  </h4>
-                  <div class="meta">
-                    <ul>
-                      <li>
-                        <a href="#"
-                          ><i class="fas fa-calendar-alt"></i> 09 Nov, 2018</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"><i class="fas fa-user"></i> User</a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fas fa-comments"></i> 47</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <p>
-                    Always polite moment on is warmth spirit it to hearts. Downs
-                    those still witty an balls so chief so. Moment an little
-                    remain
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="item">
-                <div class="thumb">
-                  <a href="single.html">
-                    <img src="./assets/img/800x600.png" alt="Thumb" />
-                    <div class="post-type">
-                      <i class="fas fa-images"></i>
-                    </div>
-                  </a>
-                </div>
-                <div class="info">
-                  <h4>
-                    <a href="single.html">Reasonably conviction solicitude</a>
-                  </h4>
-                  <div class="meta">
-                    <ul>
-                      <li>
-                        <a href="#"
-                          ><i class="fas fa-calendar-alt"></i> 16 Nov, 2018</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"><i class="fas fa-user"></i> User</a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fas fa-comments"></i> 58</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <p>
-                    Always polite moment on is warmth spirit it to hearts. Downs
-                    those still witty an balls so chief so. Moment an little
-                    remain
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Blog -->
-
-    <!-- Start Testimonials 
-    ============================================= -->
-    <div class="testimonials-area default-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="site-heading single text-center">
-              <h2>Customer Review</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="testimonial-items text-center">
-              <div
-                class="carousel slide"
-                data-ride="carousel"
-                data-interval="500000"
-                id="testimonial-carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <span class="quote"></span>
-                    <p>
-                      Understood instrument or do connection no appearance do
-                      invitation. Dried quick round it or order. Add past see
-                      west felt did any. Say out noise you taste merry plate you
-                      share. My resolve arrived is we chamber be removal.
-                    </p>
-                    <h4>Junl Sarukh</h4>
-                    <span>CEO of Softing</span>
-                  </div>
-                  <div class="carousel-item">
-                    <span class="quote"></span>
-                    <p>
-                      Understood instrument or do connection no appearance do
-                      invitation. Dried quick round it or order. Add past see
-                      west felt did any. Say out noise you taste merry plate you
-                      share. My resolve arrived is we chamber be removal.
-                    </p>
-                    <h4>Anil Spia</h4>
-                    <span>Director of Softing</span>
-                  </div>
-                  <div class="carousel-item">
-                    <span class="quote"></span>
-                    <p>
-                      Understood instrument or do connection no appearance do
-                      invitation. Dried quick round it or order. Add past see
-                      west felt did any. Say out noise you taste merry plate you
-                      share. My resolve arrived is we chamber be removal.
-                    </p>
-                    <h4>Paul Munni</h4>
-                    <span>Developer of Softing</span>
-                  </div>
-                </div>
-                <!-- End Carousel Content -->
-
-                <!-- Carousel Indicators -->
-                <ol class="carousel-indicators">
-                  <li
-                    data-target="#testimonial-carousel"
-                    data-slide-to="0"
-                    class="active"
-                  >
-                    <img src="./assets/img/800x800.png" alt="Thumb" />
-                  </li>
-                  <li data-target="#testimonial-carousel" data-slide-to="1">
-                    <img src="./assets/img/800x800.png" alt="Thumb" />
-                  </li>
-                  <li data-target="#testimonial-carousel" data-slide-to="2">
-                    <img src="./assets/img/800x800.png" alt="Thumb" />
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Testimonials -->
-
-    <!-- Start Subscribe 
-    ============================================= -->
-    <div
-      class="subscribe-area bg-fixed shadow dark text-light default-padding text-center"
-      style="background-image: url(./assets/img/2440x1578.png)"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-3">
-            <h3>Stay update with us</h3>
-            <p>
-              Dried quick round it or order. Add past see west felt did any. Say
-              out noise you taste merry plate you share. My resolve arrived is
-              we chamber be removal.
-            </p>
-            <div class="subscribe">
-              <form action="#">
-                <div class="input-group stylish-input-group">
-                  <input
-                    type="email"
-                    placeholder="Enter your e-mail here"
-                    class="form-control"
-                    name="email"
-                  />
-                  <span class="input-group-addon">
-                    <button type="submit">
-                      <i class="fa fa-paper-plane"></i>
-                    </button>
-                  </span>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Subscribe -->
-
-    <!-- Start Contact Area  
-    ============================================= -->
-    <div id="contact" class="contact-us-area default-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="site-heading text-center">
-              <h2>Contact Us</h2>
-              <p>
-                Learning day desirous informed expenses material returned six
-                the. She enabled invited exposed him another. Reasonably
-                conviction solicitude me mr at discretion reasonable. Age out
-                full gate bed day lose.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 address">
-            <div class="address-items">
-              <h4>Our Office Address</h4>
-              <ul class="info">
-                <li>
-                  <i class="fas fa-map-marked-alt"></i>
-                  <span
-                    >22 Baker Street,<br />
-                    London, United Kingdom,<br />
-                    W1U 3BW</span
-                  >
-                </li>
-                <li>
-                  <i class="fas fa-phone"></i>
-                  <span>+44-20-7328-4499</span>
-                </li>
-                <li>
-                  <i class="fas fa-envelope-open"></i>
-                  <span>info@yourdomain.com</span>
-                </li>
-              </ul>
-              <h4>Social Address</h4>
-              <ul class="social">
-                <li class="facebook">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="twitter">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="pinterest">
-                  <a href="#"><i class="fab fa-pinterest"></i></a>
-                </li>
-                <li class="instagram">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-              </ul>
-              <div class="google-maps">
-                <!-- <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"
-                ></iframe> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 contact-form">
-            <h2>Let's lalk about your idea</h2>
-            <form
-              action="./assets/mail/contact.php"
-              method="POST"
-              class="contact-form"
-            >
-              <div class="col-lg-12">
-                <div class="row">
-                  <div class="form-group">
-                    <input
-                      class="form-control"
-                      id="name"
-                      name="name"
-                      placeholder="Name"
-                      type="text"
-                    />
-                    <span class="alert-error"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="row">
-                  <div class="form-group">
-                    <input
-                      class="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="Email*"
-                      type="email"
-                    />
-                    <span class="alert-error"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="row">
-                  <div class="form-group">
-                    <input
-                      class="form-control"
-                      id="phone"
-                      name="phone"
-                      placeholder="Phone"
-                      type="text"
-                    />
-                    <span class="alert-error"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="row">
-                  <div class="form-group comments">
-                    <textarea
-                      class="form-control"
-                      id="comments"
-                      name="comments"
-                      placeholder="Tell Us About Project *"
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="row">
-                  <button type="submit" name="submit" id="submit">
-                    Send Message <i class="fa fa-paper-plane"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- Alert Message -->
-              <div class="col-lg-12 alert-notification">
-                <div id="message" class="alert-msg"></div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Contact -->
-
-    <!-- Start Faq  
-    ============================================= -->
-    <div class="faq-area bg-gray default-padding-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="site-heading text-center">
-              <h2>Answer & Question</h2>
-              <p>
-                Learning day desirous informed expenses material returned six
-                the. She enabled invited exposed him another. Reasonably
-                conviction solicitude me mr at discretion reasonable. Age out
-                full gate bed day lose.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 thumb">
-            <img src="./assets/img/700x800.png" alt="Thumb" />
-          </div>
-          <div class="col-lg-6 faq-items default-padding-bottom">
-            <!-- Start Accordion -->
-            <div class="faq-content">
-              <div class="accordion" id="accordionExample">
-                <div class="card">
-                  <div
-                    class="card-header d-flex justify-content-between align-items-center"
-                    id="headingOne"
-                  >
-                    <h4
-                      class="mb-0"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Do I need a business plan?
-                    </h4>
-                  </div>
-
-                  <div
-                    id="collapseOne"
-                    class="collapse show"
-                    aria-labelledby="headingOne"
-                    data-parent="#accordionExample"
-                  >
-                    <div class="card-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Qui consectetur at, sunt maxime, quod alias ullam
-                        officiis, ex necessitatibus similique odio aut!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div
-                    class="card-header d-flex justify-content-between align-items-center"
-                    id="headingTwo"
-                  >
-                    <h4
-                      class="mb-0 collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      How long should a business plan be?
-                    </h4>
-                  </div>
-                  <div
-                    id="collapseTwo"
-                    class="collapse"
-                    aria-labelledby="headingTwo"
-                    data-parent="#accordionExample"
-                  >
-                    <div class="card-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Qui consectetur at, sunt maxime, quod alias ullam
-                        officiis, ex necessitatibus similique odio aut!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div
-                    class="card-header d-flex justify-content-between align-items-center"
-                    id="headingThree"
-                  >
-                    <h4
-                      class="mb-0 collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      What goes into a business plan?
-                    </h4>
-                  </div>
-                  <div
-                    id="collapseThree"
-                    class="collapse"
-                    aria-labelledby="headingThree"
-                    data-parent="#accordionExample"
-                  >
-                    <div class="card-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Qui consectetur at, sunt maxime, quod alias ullam
-                        officiis, ex necessitatibus similique odio aut!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div
-                    class="card-header d-flex justify-content-between align-items-center"
-                    id="headingFour"
-                  >
-                    <h4
-                      class="mb-0 collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      Where do I start?
-                    </h4>
-                  </div>
-                  <div
-                    id="collapseFour"
-                    class="collapse"
-                    aria-labelledby="headingFour"
-                    data-parent="#accordionExample"
-                  >
-                    <div class="card-body">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Qui consectetur at, sunt maxime, quod alias ullam
-                        officiis, ex necessitatibus similique odio aut!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Accordion -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Faq  -->
-
+    
     <!-- Start Footer 
     ============================================= -->
-    <footer class="default-padding bg-light">
+    <footer>
       <div class="container">
         <div class="f-items">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 item">
-              <div class="f-item">
-                <img src="./assets/img/logo.png" alt="Logo" />
-                <p>
-                  Excellence decisively nay man yet impression for contrasted
-                  remarkably. There spoke happy for you are out. Fertile how old
-                  address did showing because sitting replied six. Had arose
-                  guest visit going off child she new.
-                </p>
-                <a href="#" class="btn circle btn-theme effect btn-sm"
-                  >Get Started</a
-                >
-              </div>
+          <div class="row justify-content-between">
+            <div class="col-4 footer-left">
+              <ul>
+                <li>Thông tin liên hệ
+                  <div class="soc-fb"><i class="fab fa-facebook-square"></i>Qchinese</div>
+                <div class="soc-mail"><i class="fas fa-envelope"></i>Qchinese@gmail.com</div>
+                <div class="soc-phone"><i class="fas fa-phone"></i>028 - 1111 1111</div>
+                <div class="soc-location"><i class="fas fa-graduation-cap"></i>CÔNG TY TNHH QCHINESE<br/>
+                  347/53 Minh Phụng, Phường 2, Quận 11, Thành phố Hồ Chí Minh</div>
+                </li>
+                <li>Chính sách thanh toán & Điều khoản</li>
+              </ul>
             </div>
-            <div class="col-lg-3 col-md-6 item">
-              <div class="f-item link">
-                <h4>Quick LInk</h4>
-                <ul>
-                  <li>
-                    <a href="#"><i class="fas fa-angle-right"></i> Home</a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fas fa-angle-right"></i> About us</a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fas fa-angle-right"></i> Compnay History</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"><i class="fas fa-angle-right"></i> Features</a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fas fa-angle-right"></i> Blog Page</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 item">
-              <div class="f-item link">
-                <h4>Community</h4>
-                <ul>
-                  <li>
-                    <a href="#"><i class="fas fa-angle-right"></i> Career</a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fas fa-angle-right"></i> Leadership</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"><i class="fas fa-angle-right"></i> Strategy</a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fas fa-angle-right"></i> Services</a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fas fa-angle-right"></i> History</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 item">
-              <div class="f-item twitter-widget">
-                <h4>Contact Info</h4>
-                <p>
-                  Estimating stimulated how reasonably precaution diminution she
-                  simplicity
-                </p>
-                <div class="address">
-                  <ul>
-                    <li>
-                      <div class="icon">
-                        <i class="fas fa-home"></i>
-                      </div>
-                      <div class="info">
-                        <h5>Website:</h5>
-                        <span>www.validtheme.com</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon">
-                        <i class="fas fa-envelope"></i>
-                      </div>
-                      <div class="info">
-                        <h5>Email:</h5>
-                        <span>support@validtheme.com</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon">
-                        <i class="fas fa-phone"></i>
-                      </div>
-                      <div class="info">
-                        <h5>Phone:</h5>
-                        <span>+44-20-7328-4499</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="col-3 footer-right">
+              <div class="download">Học tập và trải nghiệm tại</div>
+              <img src="./assets/img/google-play.png" alt="">
+              <img src="./assets/img/google-play.png" alt="">
+
             </div>
           </div>
         </div>
-        <!-- Start Footer Bottom -->
-        <div class="footer-bottom">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-lg-6">
-                <p>
-                  &copy; Copyright 2018. All Rights Reserved by
-                  <a href="#">validthemes</a>
-                </p>
-              </div>
-              <div class="col-lg-6 text-right link">
-                <ul>
-                  <li>
-                    <a href="#">Terms of user</a>
-                  </li>
-                  <li>
-                    <a href="#">License</a>
-                  </li>
-                  <li>
-                    <a href="#">Support</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Footer Bottom -->
+       
       </div>
+       <!-- Start Footer Bottom -->
+       <div class="footer-bottom">
+        <div class="col-lg-12 ">
+          <div class="row justify-content-center text">© 2022 All rights reserved. Designed by</div>
+        </div>
+      </div>
+      <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
 
@@ -1631,6 +1030,19 @@
       });
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1.5,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+      var swiper = new Swiper(".teamSwiper", {
+        slidesPerView: 3.3,
         spaceBetween: 30,
         centeredSlides: true,
         loop: true,
