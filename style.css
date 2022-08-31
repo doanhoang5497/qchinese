@@ -3682,10 +3682,10 @@ footer {
   background: linear-gradient(279.98deg, #000000 -20.96%, #717272 117.98%);
   box-shadow: inset -4px -4px 20px rgba(184, 66, 0, 0.25),
     inset 4px 4px 12px rgba(184, 66, 0, 0.25);
-  padding: 48px 116px 116px 116px;
+  padding: 116px;
 }
 .swiper {
-  width: 800px;
+  width: auto;
 }
 
 .mySwiper .swiper-slide {
@@ -3757,7 +3757,13 @@ footer {
 }
 .card i {
   font-size: 18px;
-  color: #3863af;
+  color: transparent;
+  background-image: url(./assets/img/i-add.png);
+  background-size: cover;
+}
+.card i[aria-expanded="true"]{
+  background-image: url(./assets/img/i-remove.png);
+  background-size: cover;
 }
 /* ============================================================== 
      # Login 
